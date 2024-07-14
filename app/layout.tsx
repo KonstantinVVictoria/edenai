@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
+import Sidebar from "@/components/Sidebar/Sidebar";
+import Viewport from "@/components/Viewport/Viewport";
+import FirebaseHandler from "@/lib/Firebase";
+import { useContext, createContext } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Viewport>{children}</Viewport>
+      </body>
     </html>
   );
 }

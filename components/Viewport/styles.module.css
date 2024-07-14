@@ -1,0 +1,21 @@
+.vars {
+  composes: vars from "../Navbar/styles.module.css";
+}
+
+.main {
+  composes: vars;
+  width: 100vw;
+  display: flex;
+  height: calc(100vh - var(--navbar-height));
+  max-height: calc(100vh - var(--navbar-height));
+}
+.viewport {
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 100vh;
+}

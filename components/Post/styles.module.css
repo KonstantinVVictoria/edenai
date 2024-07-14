@@ -1,0 +1,6 @@
+.content {
+  cursor: pointer;
+}
+.content:hover {
+  background-color: rgb(240, 240, 240);
+}

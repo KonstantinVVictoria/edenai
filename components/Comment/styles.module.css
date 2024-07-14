@@ -1,0 +1,29 @@
+div.container {
+  display: flex;
+  width: 100%;
+  background-color: blue;
+  margin: 10px 0px;
+  & > img.user_profile {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+  & > div.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 0, 255);
+    width: 100%;
+    & > div.user_handle {
+      & > h2.user_name {
+      }
+      & > p.date {
+      }
+    }
+    & > div.content {
+    }
+    & > div.toolbar {
+    }
+  }
+}
